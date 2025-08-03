@@ -1,70 +1,127 @@
-# Getting Started with Create React App
+# 🏥 Healthcare Appointment Fullstack App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A full-stack web application for booking doctor appointments. Built with React for the frontend and Node.js + Express + SQLite for the backend.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Live Demo
 
-### `npm start`
+- **Frontend (Netlify)**: [https://healthcarefullstack1.netlify.app](https://healthcarefullstack1.netlify.app)
+- **Backend (Render)**: [https://healthcare-backend-og2g.onrender.com](https://healthcare-backend-og2g.onrender.com)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🖥️ Tech Stack
 
-### `npm test`
+### Frontend (React.js)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **React Router DOM v5** – Routing
+- **APIs** – API calls
+- **CSS** – Styling
+- **React Hooks** – State and side effects
+- **Deployed on Netlify**
 
-### `npm run build`
+### Backend (Node.js + Express)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Express.js** – Web framework
+- **SQLite3** – Lightweight relational database
+- **CORS** – To allow cross-origin requests
+- **Nodemon** (dev) – Auto-restart backend on code changes
+- **Deployed on Render**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 📂 Project Structure
 
-### `npm run eject`
+### Frontend
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
+/src
+  ├── components/
+  ├── pages/
+  ├── App.js
+  └── index.js
+Backend
+bash
+Copy
+Edit
+/
+├── server.js
+├── db.js
+├── routes/
+│   ├── doctors.js
+│   └── appointments.js
+🛠️ How to Run Locally
+1. Clone the Repository
+bash
+Copy
+Edit
+git clone https://github.com/your-username/healthcare-fullstack.git
+cd healthcare-fullstack
+2. Setup Backend
+bash
+Copy
+Edit
+cd backend
+npm install
+npm start
+Runs on http://localhost:3000
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. Setup Frontend
+bash
+Copy
+Edit
+cd frontend
+npm install
+npm start
+Runs on http://localhost:3001
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Make sure you change API URLs to point to http://localhost:3000 during local development.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+🚀 Deployment Instructions
+Frontend (Netlify)
+Push frontend code to GitHub.
 
-## Learn More
+Go to Netlify, link your GitHub repo.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Set build command: npm run build
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Publish directory: build/
 
-### Code Splitting
+Ensure the backend Render URL is used in fetch/axios calls.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Backend (Render)
+Push backend code to GitHub.
 
-### Analyzing the Bundle Size
+Go to Render, create a new Web Service.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Choose repo and set:
 
-### Making a Progressive Web App
+Build Command: npm install
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Start Command: node server.js
 
-### Advanced Configuration
+Add environment variable:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+ini
+Copy
+Edit
+PORT = 3000
+Enable auto-deploy on push.
 
-### Deployment
+🌱 Future Development
+✅ Add Authentication (JWT or OAuth) for secure login
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+✅ Admin Panel for doctors to manage slots
 
-### `npm run build` fails to minify
+📅 Appointment Calendar View
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+📬 Email Notification Integration
+
+📱 Responsive Mobile-first Design Enhancements
+
+🔍 Search / Filter by Speciality
+
+📊 Dashboard Analytics for Doctors/Admin
+
+🧪 Unit & Integration Testing (Jest, React Testing Library)
