@@ -1,0 +1,27 @@
+.success-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 24px;
+  border-radius: 8px;
+  background-color: #f0fdf4;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.success-heading {
+  color: #28a745;
+  font-size: 26px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.appointment-info p {
+  font-size: 18px;
+  margin: 8px 0;
+  color: #333;
+}
+
+.error-text {
+  color: red;
+  text-align: center;
+  margin-top: 20px;
+}

@@ -1,0 +1,146 @@
+/* Container for the whole profile section */
+.profile-container {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Back button */
+.back-button {
+  text-decoration: none;
+  color: #ff6600;
+  font-size: 18px;
+  font-weight: 600;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+/* Profile Card */
+.profile-card {
+  background-color: #fffef6;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  flex-direction: row;
+}
+
+/* Profile image */
+.profile-img {
+  width: 280px;
+  height: 280px;
+  border-radius: 12px;
+  object-fit: cover;
+  border: 5px solid #ff9800;
+  flex-shrink: 0;
+}
+
+/* Info section */
+.profile-info {
+  text-align: left;
+  width: 100%;
+}
+
+.profile-info h2 {
+  font-size: 36px;
+  color: #ff6600;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* Individual info line */
+.profile-info p {
+  font-size: 22px;
+  margin: 12px 0;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+/* Colored highlights for each field */
+.profile-info .profession strong {
+  color: #ff5722;
+  font-size: 24px;
+}
+
+.profile-info .availability strong {
+  color: #2e7d32;
+  font-size: 24px;
+}
+
+.profile-info .experience strong {
+  color: #1565c0;
+  font-size: 24px;
+}
+
+.profile-info .phone strong {
+  color: #d32f2f;
+  font-size: 24px;
+  background-color: #ffe0b2;
+  padding: 4px 10px;
+  border-radius: 8px;
+}
+
+.profile-info .location strong {
+  color: #6a1b9a;
+  font-size: 24px;
+}
+
+/* Book buttons */
+.book-btn {
+  font-size: 18px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  border: none;
+  margin-top: 20px;
+}
+
+.book-btn.available {
+  background-color: #43a047;
+  color: white;
+}
+
+.book-btn.booked {
+  background-color: #9e9e9e;
+  color: white;
+}
+
+.book-btn.leave {
+  background-color: #ff7043;
+  color: white;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .profile-card {
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+  }
+
+  .profile-img {
+    width: 100%;
+    height: auto;
+  }
+
+  .profile-info h2 {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .profile-info p {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .profile-info p strong {
+    font-size: 22px;
+  }
+
+  .book-btn {
+    width: 100%;
+  }
+}
